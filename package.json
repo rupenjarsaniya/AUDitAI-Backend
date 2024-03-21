@@ -18,11 +18,10 @@
         }
     },
     "lint-staged": {
-        "*.ts": [
-            "eslint — fix",
-            "prettier — write",
-            "git add"
-        ]
+       "src/**/*.{ts,tsx}": [
+           "eslint --fix",
+           "prettier --write"
+       ]
     },
     "repository": {
         "type": "git",
